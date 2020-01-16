@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <!--<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+-->
+ <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  
+<h1 id="title">Dont Medicate, Meditate</h1>
+<div id="form-outer">
+  <p id="description">
+    "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the "present" --- Master Ooogway
+  </p>
+  <form id="survey-form" method="GET" action="mailto:mail@mail4321.com">
+        <div class="rowTab">
+             <div class="labels">
+               <label id="name-label" for="name">* Name:</label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+    <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">*Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="300" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your current happiness level?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option disabled value>Select an option</option>
+          <option value="veryhappy">Very Happy</option>
+          <option value="happy">Happy</option>
+          <option value="neutral">Neutral</option>
+          <option value="sad">Sad</option>
+          <option value="verysad">Very Sad</option>
+        </select>
+      </div>
+    </div>
+    <fieldset>
+    <div class="rowTab">
+      <div class="labels">
+    <label for="userRating">* Are you living in the present?</label>
+    </div>
+  <div class="rightTab">
+    <ul style="list-style:none;">
+      <li class="radio"><label>Yes<input name="radio-buttons" value="1" type="radio" class="userRatings"></label>
+      </li>
+      <li class="radio"><label>No<input name="radio-buttons" value="2" type="radio" class="userRatings"></label>
+      </li>
+      <li class="radio"><label>Maybe<input name="radio-buttons" value="3" type="radio" class="userRatings"></label>
+      </li>
+      <li class="radio"><label>Not Sure<input name="radio-buttons" value="4" type="radio" class="userRatings"></label>
+      </li>
+    </ul>
+  </div>
+ </div>
+      </fieldset>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you think of Meditation? </label>
+      </div>
+      <div class="rightTab">
+      <select id="most-like" name="mostLike" class="dropdown">
+        <option diabled selected value>Select an option</option>
+        <option value="helpful">Helpful</option>
+        <option value="necessary">Necessary</option>
+        <option value="irrelevant">Irrelevant</option>
+        <option value="waste-of-time">Waste of time</option>
+      </select>
+    </div>
+    </div>
+<fieldset>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="goals">What do you hope to accomplish in Meditating<br>(Check all that apply): </label>
+    </div>
+    <div class="rightTab">
+      <ul id="goals" style="list-style:none;">
+        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Less Stress</label></li>
+        <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Ability to get up again after failure</li>
+        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Happiness </label></li>
+        <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Live in the moment</label></li>
+        <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">More appreciation</label></li>
+        <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Clearer Mind</label></li>
+        <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Direction in Life</label></li>
+        <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">New Perspective</label></li>
+        </ul>
+    </div>
+  </div>
+</fieldset>
+   <div class="rowTab">
+     <div class="labels">
+       <label for="comments">Any Comments or Suggestions?</label>
+     </div>
+     <div class="rightTab">
+       <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+     </div>
+  </div>
+  <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+</head>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
